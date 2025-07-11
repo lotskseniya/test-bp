@@ -1,0 +1,32 @@
+@use "../../../styles/variables" as vars;
+@use "../../../styles/mixins" as mixins;
+
+.summary__button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10dvh;
+  background-color: vars.$primary-color;
+  padding: 12px;
+  outline: 0;
+  width: 100%;
+  border: none;
+  color: vars.$white-color;
+  @include mixins.h4;
+  border-radius: 10px;
+  font-size: 17px;
+  border: none;
+  transition: all 0.3s;
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 60px);
+text-transform: uppercase;
+
+  // &:hover {
+  //   background-color: vars.$white-color !important;
+  //   color: vars.$second-color-1 !important;
+  //   border: 1px solid vars.$second-color-1;
+  //   transform: translateY(-3px);
+  // }
+}
